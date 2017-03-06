@@ -95,8 +95,8 @@ class AI:
         while self.decision_tree.children is None:
             self.analyze_board()
         if self.color == "black":
-            move = self.decision_tree.eval_tree_1()
-        else:
             move = self.decision_tree.eval_tree_2()
+        else:
+            move = self.decision_tree.eval_tree_1()
         print "AI move: " + str(move) + '\n'
         return move

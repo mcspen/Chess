@@ -284,11 +284,11 @@ def open_game_window(window_x, window_y):
 
     # Initialize Game
     game_board = GameBoard()
-    #game_board.load_game()
+    # game_board.load_game()
 
     # Assign players and create AI if it is cpu
-    white_player = "cpu"
-    black_player = "human"
+    white_player = "human"
+    black_player = "cpu"
 
     if white_player == "cpu":
         ai_pipe_white, controller_pipe_white = Pipe()
